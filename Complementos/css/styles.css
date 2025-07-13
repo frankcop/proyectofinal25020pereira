@@ -321,7 +321,7 @@ nav i {
     display: block;
   }
 
-  nav3 ul {
+  nav ul {
     flex-direction: column;
     width: 100%;
     background-color: #f6d6d6;
