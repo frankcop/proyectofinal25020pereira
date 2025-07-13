@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto - Naomi</title>
+
+<meta name="description" content="Formulario de contacto para comunicarte con Naomi, tu tienda de ropa.">
+<meta name="keywords" content="contacto, tienda, ropa, ecommerce">
+<meta name="author" content="Tu Nombre">
+<link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="header-container">
+    <a href="../../index.html" class="logo">
+      <img src="../img/logo.png" alt="Naomi Logo">
+    </a>
+
+    <!-- Botón hamburguesa -->
+    <button class="hamburger" aria-label="Abrir menú">
+      <i class="fa fa-bars"></i>
+    </button>
+
+    <nav>
+      <ul>
+        <li><a href="../../index.html#productos">Productos <i class="fa fa-shopping-bag"></i></a></li>
+        <li><a href="../paginas/contacto.html">Contacto <i class="fa fa-envelope"></i></a></li>
+        <li><a href="../paginas/carrito.html">Carrito <span id="contador-carrito">(0)</span>
+<i class="fa fa-shopping-cart"></i></a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <h2 class="titulo-productos">Contacto</h2>
+
+  <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <input type="text" name="nombre" placeholder="Nombre y Apellido" required>
+    <input type="email" name="email" placeholder="Correo electrónico" required>
+    <textarea name="mensaje" rows="4" placeholder="Tu mensaje" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+
+</main>
+
+<footer>
+  <p>&copy; 2025 Naomi. Todos los derechos reservados.</p>
+</footer>
+
+<script src="../js/script.js"></script>
+</body>
+</html>
