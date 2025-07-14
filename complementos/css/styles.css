@@ -1,5 +1,7 @@
-/* ====================== */
-/* INICIO Estilos Generales */
+/* ========================== */
+/*        ESTILOS GENERALES   */
+/* ========================== */
+
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
@@ -16,12 +18,11 @@ main {
   text-align: center;
   margin-top: 2rem;
 }
-/* FIN Estilos Generales */
-/* ====================== */
 
+/* ========================== */
+/*           HEADER           */
+/* ========================== */
 
-/* ====================== */
-/* INICIO Header y Navbar */
 header {
   position: fixed;
   top: 0;
@@ -32,39 +33,19 @@ header {
   color: #333;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   transition: all 0.3s ease;
-  height: 80px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  height: 100px;
 }
 
 header.scrolled {
-  height: 65px;
+  height: 70px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   opacity: 0.98;
 }
 
-header .navbar {
-  transition: all 0.3s ease;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  background: transparent;
-  border-radius: 0;
-}
+/* ========================== */
+/*       LOGO DEL HEADER      */
+/* ========================== */
 
-header.scrolled .navbar {
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
-  background-color: #ffffff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-/* FIN Header y Navbar */
-/* ====================== */
-
-
-/* ====================== */
-/* INICIO Logo */
 .logo {
   position: relative;
   display: inline-block;
@@ -103,51 +84,34 @@ header.scrolled .navbar {
 .logo:hover img {
   transform: scale(1.05);
 }
-/* FIN Logo */
-/* ====================== */
 
+/* ========================== */
+/*         NAVBAR             */
+/* ========================== */
 
-/* ====================== */
-/* INICIO Navegación */
-nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  flex-wrap: wrap;
-}
-
-nav li {
-  margin: 0 0.5rem;
-}
-
-nav a {
+.navbar-nav .nav-link {
+  background-color: #f6d6d6; /* color pastel por defecto */
   color: #333;
-  text-decoration: none;
   padding: 0.5rem 1rem;
-  border-radius: 20px;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  transition: background 0.3s, color 0.3s;
-  font-weight: 500;
+  border-radius: 50px;
+  margin: 0 0.3rem;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-nav a:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-  color: #000;
+.navbar-nav .nav-link:hover {
+  background-color: #e7a8a1; /* más intenso al pasar el mouse */
+  color: #fff;
 }
 
 nav i {
   margin-left: 0.3rem;
   color: #555;
 }
-/* FIN Navegación */
-/* ====================== */
 
+/* ========================== */
+/*        BANNER HERO         */
+/* ========================== */
 
-/* ====================== */
-/* INICIO Banner */
 .banner {
   background-image: url('../img/banner.jpg');
   background-size: cover;
@@ -193,12 +157,11 @@ nav i {
 .banner button:hover {
   background-color: #DFFFD8;
 }
-/* FIN Banner */
-/* ====================== */
 
+/* ========================== */
+/*      PRODUCTOS GRID        */
+/* ========================== */
 
-/* ====================== */
-/* INICIO Productos */
 .productos-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -253,12 +216,11 @@ nav i {
 .producto-card button:hover {
   background-color: #DFFFD8;
 }
-/* FIN Productos */
-/* ====================== */
 
+/* ========================== */
+/*       FORMULARIOS          */
+/* ========================== */
 
-/* ====================== */
-/* INICIO Formulario */
 form {
   display: flex;
   flex-direction: column;
@@ -289,12 +251,27 @@ form button {
 form button:hover {
   background-color: #DFFFD8;
 }
-/* FIN Formulario */
-/* ====================== */
 
+#form-error {
+  font-weight: bold;
+  text-align: center;
+}
 
-/* ====================== */
-/* INICIO Carrito */
+/* ========================== */
+/*           FOOTER           */
+/* ========================== */
+
+footer {
+  background: #F6D6D6;
+  color: #333;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* ========================== */
+/*      CARRITO DE COMPRAS    */
+/* ========================== */
+
 .carrito-container table {
   width: 100%;
   border-collapse: collapse;
@@ -328,24 +305,11 @@ form button:hover {
 .carrito-container button:hover {
   background-color: #DFFFD8;
 }
-/* FIN Carrito */
-/* ====================== */
 
+/* ========================== */
+/*          RESPONSIVE        */
+/* ========================== */
 
-/* ====================== */
-/* INICIO Footer */
-footer {
-  background: #F6D6D6;
-  color: #333;
-  text-align: center;
-  padding: 1rem;
-}
-/* FIN Footer */
-/* ====================== */
-
-
-/* ====================== */
-/* INICIO Responsive */
 @media (max-width: 600px) {
   .header-container {
     flex-direction: column;
@@ -367,7 +331,7 @@ footer {
     width: 100%;
     background-color: #f6d6d6;
     position: absolute;
-    top: 80px;
+    top: 100px;
     left: 0;
     max-height: 0;
     opacity: 0;
@@ -386,5 +350,20 @@ footer {
     margin: 1rem 0;
   }
 }
-/* FIN Responsive */
-/* ====================== */
+
+/* ========================== */
+/* NAVBAR ANIMACIÓN AL SCROLL */
+/* ========================== */
+
+header .navbar {
+  transition: all 0.3s ease;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+header.scrolled .navbar {
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
