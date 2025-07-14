@@ -18,53 +18,37 @@
 </head>
 <body>
 
-<!-- ====== Inicio Header/Menu ====== -->
+<!-- INICIO MENU -->
 <header>
-<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm rounded-3 fixed-top py-2">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm rounded-3">
   <div class="container">
-
-    <!-- ====== Inicio Logo ====== -->
     <a class="navbar-brand" href="../../index.html">
       <img src="../img/logo.png" alt="Naomi Logo" height="40">
     </a>
-    <!-- ====== Fin Logo ====== -->
-
-    <!-- ====== Inicio Botón Hamburguesa ====== -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <!-- ====== Fin Botón Hamburguesa ====== -->
-
-    <!-- ====== Inicio Links Navegación ====== -->
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto gap-2">
+      <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link btn btn-outline-primary rounded-pill px-3 py-1" href="../../index.html#productos">
-            Productos <i class="fa fa-shopping-bag"></i>
-          </a>
+          <a class="nav-link btn btn-light rounded-pill mx-1" href="../../index.html#productos">Productos <i class="fa fa-shopping-bag"></i></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link btn btn-outline-primary rounded-pill px-3 py-1" href="../paginas/contacto.html">
-            Contacto <i class="fa fa-envelope"></i>
-          </a>
+          <a class="nav-link btn btn-light rounded-pill mx-1" href="contacto.html">Contacto <i class="fa fa-envelope"></i></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link btn btn-outline-primary rounded-pill px-3 py-1" href="../paginas/carrito.html">
+          <a class="nav-link btn btn-light rounded-pill mx-1" href="carrito.html">
             Carrito <span id="contador-carrito">(0)</span> <i class="fa fa-shopping-cart"></i>
           </a>
         </li>
       </ul>
     </div>
-    <!-- ====== Fin Links Navegación ====== -->
-
   </div>
 </nav>
 </header>
-<!-- ====== Fin Header/Menu ====== -->
+<!-- FIN MENU -->
 
 <main>
-
-  <!-- ====== Inicio Formulario de Contacto ====== -->
   <h2 class="titulo-productos">Contacto</h2>
 
   <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
@@ -73,15 +57,12 @@
     <textarea name="mensaje" rows="4" placeholder="Tu mensaje" required></textarea>
     <button type="submit">Enviar</button>
   </form>
-  <!-- ====== Fin Formulario de Contacto ====== -->
 
 </main>
 
-<!-- ====== Inicio Footer ====== -->
 <footer>
   <p>&copy; 2025 Naomi. Todos los derechos reservados.</p>
 </footer>
-<!-- ====== Fin Footer ====== -->
 
 <script src="../js/script.js"></script>
 </body>
