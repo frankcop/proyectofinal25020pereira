@@ -1,5 +1,5 @@
 /* ====================== */
-/* INICIO Estilos generales */
+/* INICIO Estilos Generales */
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
@@ -7,23 +7,21 @@ body {
   background-color: #FFF7F1;
   color: #333;
 }
-/* FIN Estilos generales */
-/* ====================== */
 
+main {
+  padding-top: 110px;
+}
 
-/* ====================== */
-/* INICIO Título principal */
 .titulo-productos {
   text-align: center;
   margin-top: 2rem;
 }
-/* FIN Título principal */
+/* FIN Estilos Generales */
 /* ====================== */
 
 
 /* ====================== */
-/* ====================== */
-/* INICIO Header */
+/* INICIO Header y Navbar */
 header {
   position: fixed;
   top: 0;
@@ -34,7 +32,7 @@ header {
   color: #333;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   transition: all 0.3s ease;
-  height: 80px; /* antes 100px */
+  height: 80px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
@@ -44,23 +42,25 @@ header.scrolled {
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   opacity: 0.98;
 }
-/* FIN Header */
-/* ====================== */
 
 header .navbar {
   transition: all 0.3s ease;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  background: transparent;
+  border-radius: 0;
 }
 
 header.scrolled .navbar {
   padding-top: 0.2rem;
   padding-bottom: 0.2rem;
-  background-color: #ffffff; 
+  background-color: #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
+/* FIN Header y Navbar */
+/* ====================== */
 
 
 /* ====================== */
@@ -108,7 +108,7 @@ header.scrolled .navbar {
 
 
 /* ====================== */
-/* INICIO Menú de navegación */
+/* INICIO Navegación */
 nav ul {
   display: flex;
   justify-content: center;
@@ -122,28 +122,27 @@ nav li {
   margin: 0 0.5rem;
 }
 
-/* Botones del menú (todos iguales, estéticos y contrastados) */
-.navbar-nav .nav-link {
-  background-color: #e7a8a1; /* rosa suave */
-  color: #fff !important;
-  border-radius: 50px;
-  padding: 0.4rem 1rem;
-  margin: 0 0.25rem;
-  font-weight: 500;
-  transition: all 0.3s ease;
+nav a {
+  color: #333;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  background-color: #fff;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: background 0.3s, color 0.3s;
+  font-weight: 500;
 }
 
-.navbar-nav .nav-link:hover {
-  background-color: #d88f89; /* un poco más oscuro en hover */
-  color: #fff !important;
+nav a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #000;
 }
 
 nav i {
   margin-left: 0.3rem;
   color: #555;
 }
-/* FIN Menú de navegación */
+/* FIN Navegación */
 /* ====================== */
 
 
@@ -259,7 +258,7 @@ nav i {
 
 
 /* ====================== */
-/* INICIO Formulario de contacto */
+/* INICIO Formulario */
 form {
   display: flex;
   flex-direction: column;
@@ -290,33 +289,12 @@ form button {
 form button:hover {
   background-color: #DFFFD8;
 }
-
-#form-error {
-  font-weight: bold;
-  text-align: center;
-}
-/* FIN Formulario de contacto */
-/* ====================== */
-
-
-/* ====================== */
-/* INICIO Footer */
-footer {
-  background: #F6D6D6;
-  color: #333;
-  text-align: center;
-  padding: 1rem;
-}
-/* FIN Footer */
+/* FIN Formulario */
 /* ====================== */
 
 
 /* ====================== */
 /* INICIO Carrito */
-main {
-  padding-top: 110px;
-}
-
 .carrito-container table {
   width: 100%;
   border-collapse: collapse;
@@ -355,17 +333,19 @@ main {
 
 
 /* ====================== */
-/* INICIO Responsive */
-.hamburger {
-  display: none;
-  font-size: 2rem;
-  background: none;
-  border: none;
-  cursor: pointer;
+/* INICIO Footer */
+footer {
+  background: #F6D6D6;
   color: #333;
-  z-index: 1100;
+  text-align: center;
+  padding: 1rem;
 }
+/* FIN Footer */
+/* ====================== */
 
+
+/* ====================== */
+/* INICIO Responsive */
 @media (max-width: 600px) {
   .header-container {
     flex-direction: column;
@@ -387,7 +367,7 @@ main {
     width: 100%;
     background-color: #f6d6d6;
     position: absolute;
-    top: 100px;
+    top: 80px;
     left: 0;
     max-height: 0;
     opacity: 0;
@@ -405,19 +385,6 @@ main {
   nav li {
     margin: 1rem 0;
   }
-}
-
-header .navbar {
-  transition: all 0.3s ease;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-header.scrolled .navbar {
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
-  background-color: #ffffff; 
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 /* FIN Responsive */
 /* ====================== */
