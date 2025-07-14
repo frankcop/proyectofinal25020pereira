@@ -7,13 +7,13 @@ body {
   padding: 0;
   min-height: 100vh;
 
-  /* Fondo */
-  background: url(../img/lad1.jpg) no-repeat center center fixed;
-  background-size: cover;
+  /* Fondo en patrón */
+  background: url(../img/lad1.jpg) repeat;
+  background-attachment: fixed;
 
   /* Colores y texto */
   color: #333;
-  font-size: 16px; /* mantenemos legible */
+  font-size: 16px;
 }
 
 main {
