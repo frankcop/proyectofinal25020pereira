@@ -22,6 +22,7 @@ body {
 
 
 /* ====================== */
+/* ====================== */
 /* INICIO Header */
 header {
   position: fixed;
@@ -33,16 +34,33 @@ header {
   color: #333;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   transition: all 0.3s ease;
-  height: 100px;
+  height: 80px; /* antes 100px */
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 header.scrolled {
-  height: 70px;
+  height: 65px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   opacity: 0.98;
 }
 /* FIN Header */
 /* ====================== */
+
+header .navbar {
+  transition: all 0.3s ease;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+header.scrolled .navbar {
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  background-color: #ffffff; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
 
 
 /* ====================== */
