@@ -2,11 +2,24 @@
 /*        ESTILOS GENERALES   */
 /* ========================== */
 
-body {
-  font-family: 'Roboto', sans-serif;
+/* ================================== */
+/* 🔷 Reset general                  */
+/* ================================== */
+* {
   margin: 0;
   padding: 0;
-  background-color: #FFF7F1;
+  box-sizing: border-box;
+}
+
+/* ================================== */
+/* 🔷 Fondo del body con lad1.jpg   */
+/* ================================== */
+body {
+  min-height: 100vh;
+  background: url(../img/lad1.jpg) no-repeat center center fixed;
+  background-size: cover;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
   color: #333;
 }
 
