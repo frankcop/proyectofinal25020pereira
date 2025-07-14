@@ -69,23 +69,6 @@ window.addEventListener('scroll', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  const hamburger = document.querySelector('.hamburger');
-  const navUl = document.querySelector('nav ul');
-  const icon = hamburger?.querySelector('i');
-
-  if (hamburger && navUl) {
-    hamburger.addEventListener('click', () => {
-      navUl.classList.toggle('show');
-      if (navUl.classList.contains('show')) {
-        icon.classList.remove('fa-bars');
-        icon.classList.add('fa-times');
-      } else {
-        icon.classList.remove('fa-times');
-        icon.classList.add('fa-bars');
-      }
-    });
-  }
-
   const contactForm = document.getElementById('contact-form');
   if (contactForm) {
     contactForm.addEventListener('submit', function (e) {
