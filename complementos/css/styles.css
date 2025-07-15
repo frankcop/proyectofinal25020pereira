@@ -26,7 +26,7 @@ main {
 }
 
 /* ========================== */
-/*           HEADER           */
+/* 🔷 HEADER                  */
 /* ========================== */
 
 header {
@@ -49,7 +49,7 @@ header.scrolled {
 }
 
 /* ========================== */
-/*       LOGO DEL HEADER      */
+/* 🔷 LOGO DEL HEADER         */
 /* ========================== */
 
 .logo {
@@ -92,7 +92,7 @@ header.scrolled {
 }
 
 /* ========================== */
-/*         NAVBAR             */
+/* 🔷 NAVBAR / MENÚ           */
 /* ========================== */
 
 .navbar-nav .nav-link {
@@ -115,7 +115,7 @@ nav i {
 }
 
 /* ========================== */
-/*        BANNER HERO         */
+/* 🔷 BANNER HERO             */
 /* ========================== */
 
 .banner {
@@ -165,7 +165,7 @@ nav i {
 }
 
 /* ========================== */
-/*      PRODUCTOS GRID        */
+/* 🔷 PRODUCTOS GRID          */
 /* ========================== */
 
 .productos-container {
@@ -224,7 +224,7 @@ nav i {
 }
 
 /* ========================== */
-/*       FORMULARIOS          */
+/* 🔷 FORMULARIOS             */
 /* ========================== */
 
 form {
@@ -264,7 +264,7 @@ form button:hover {
 }
 
 /* ========================== */
-/*           FOOTER           */
+/* 🔷 FOOTER                  */
 /* ========================== */
 
 footer {
@@ -275,7 +275,7 @@ footer {
 }
 
 /* ========================== */
-/*      CARRITO DE COMPRAS    */
+/* 🔷 CARRITO DE COMPRAS      */
 /* ========================== */
 
 .carrito-container table {
@@ -313,7 +313,7 @@ footer {
 }
 
 /* ========================== */
-/*          RESPONSIVE        */
+/* 🔷 RESPONSIVE - MOBILE     */
 /* ========================== */
 
 @media (max-width: 600px) {
@@ -327,38 +327,10 @@ footer {
   }
 }
 
-@media (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
-
-  nav ul {
-    flex-direction: column;
-    width: 100%;
-    background-color: #f6d6d6;
-    position: absolute;
-    top: 100px;
-    left: 0;
-    max-height: 0;
-    opacity: 0;
-    transform: translateY(-10px);
-    overflow: hidden;
-    transition: max-height 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
-  }
-
-  nav ul.show {
-    max-height: 500px;
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  nav li {
-    margin: 1rem 0;
-  }
-}
+/* Eliminado el bloque conflictivo que rompía el menú hamburguesa */
 
 /* ========================== */
-/* NAVBAR ANIMACIÓN AL SCROLL */
+/* 🔷 NAVBAR ANIMACIÓN SCROLL */
 /* ========================== */
 
 header .navbar {
